@@ -1,0 +1,50 @@
+@import 'config';
+
+.container{
+    display: flex;
+    .chat_container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .chat{
+            flex: 1;
+            height: 100vh;
+            overflow: scroll;
+        }
+
+    }
+}
+.chat_header{
+    position: sticky;
+    background-color: #fff;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    padding: 5px 1rem;
+    align-items: center;
+    border-bottom: 2px solid whitesmoke;
+
+    div{
+        display: flex;
+        flex-direction: column;
+        padding: 5px 11px;
+
+        *{
+            margin: 5px 0;
+        }
+    }
+}
+.message_container{
+    padding: 30px;
+    flex: 1;
+    min-height: 80vh;
+    background-color: lighten($primary-green-color, 40%);
+}
+
+@media (max-width: 700px) {
+    .container{
+        flex-direction: column;
+    }
+}

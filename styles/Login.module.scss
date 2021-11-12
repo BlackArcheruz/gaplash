@@ -1,0 +1,53 @@
+@import 'config';
+
+.login{
+    max-width: 85%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    background-image: url('../public/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 70px;
+    width: 70px;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.btn{
+    background-color: $primary-green-color;
+    padding: .7rem 1.5rem;
+    margin: 1.5rem 0;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+
+    &:hover{
+        background-color: darken($primary-green-color, 10%);
+        cursor: pointer;
+        transition: ease-in-out background-color 200ms;
+    }
+}
+
+.gif{
+    background-image: url('https://icon-library.com/images/spinner-icon-gif/spinner-icon-gif-27.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 100px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

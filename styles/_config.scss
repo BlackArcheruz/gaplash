@@ -1,0 +1,55 @@
+$light-color: #F2F5F9;
+$dark-light-color: #AEB5C2;
+$dark-color: #140F26;
+$brown-color: #746373;
+$primary-color: #2E4043;
+$primary-green-color: #4DC591;
+
+
+$spaceamounts: (1,2,3,4,5,6,7,8,9,10);
+
+@each $space in $spaceamounts {
+  .m#{$space}{
+    margin: #{$space}rem;
+  }
+  .mt#{$space}{
+    margin-top: #{$space}rem;
+  }
+  .mb#{$space}{
+    margin-bottom: #{$space}rem;
+  }
+  .mr#{$space}{
+    margin-right: #{$space}rem;
+  }
+  .ml#{$space}{
+    margin-left: #{$space}rem;
+  }
+  .mx#{$space}{
+    margin: 0 #{$space}rem;
+  }
+  .my#{$space}{
+    margin: #{$space}rem 0;
+  }
+
+  .p#{$space}{
+    padding: #{$space}rem;
+  }
+  .pt#{$space}{
+    padding-top: #{$space}rem;
+  }
+  .pb#{$space}{
+    padding-bottom: #{$space}rem;
+  }
+  .pr#{$space}{
+    padding-right: #{$space}rem;
+  }
+  .pl#{$space}{
+    padding-left: #{$space}rem;
+  }
+  .px#{$space}{
+    padding: 0 #{$space}rem;
+  }
+  .py#{$space}{
+    padding: #{$space}rem 0;
+  }
+}
